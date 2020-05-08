@@ -1,0 +1,37 @@
+package step02_¿¬»êÀÚ;
+
+public class CastingEx {
+
+	public static void main(String[] args) {
+		byte a=100;
+		int b=a;
+		
+		double c=73.45;
+		int d=(int)c;
+		
+		System.out.println(a + "  "+ b);
+		System.out.println(c + "  "+ d);
+		
+		
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

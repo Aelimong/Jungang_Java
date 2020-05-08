@@ -1,0 +1,42 @@
+import java.sql.ResultSet;
+import java.util.*;
+import java.util.Map.Entry;
+
+public class MapEx {
+
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		map.put("blue",96);
+		map.put("hong",86);
+		map.put("white",92);
+		
+		String name=null; //최고점수 받은 아이디
+		int maxScore=0;   //최고점수
+		int totalScore=0; //점수합계
+		
+		//System.out.println(map.get("blue"));
+		
+		//Set<Entry<String, Integer>> set= map.entrySet();
+		
+		Collection<Integer>set2=map.values();
+		Iterator<Integer> setIterator=set2.iterator();
+		
+		while(setIterator.hasNext()) {
+			Integer scores = setIterator.next();
+			System.out.println(scores);
+			totalScore+=scores;
+			
+		}
+	
+		maxScore=Collections.max(set2);
+		minScore=Collections.min(set2);
+		
+		System.out.println("합계점수: "+totalScore);
+		System.out.println("평균점수: "+(totalScore/map.size()));
+		System.out.println("최고점수: "+maxScore);
+		
+		
+		
+	}
+
+}

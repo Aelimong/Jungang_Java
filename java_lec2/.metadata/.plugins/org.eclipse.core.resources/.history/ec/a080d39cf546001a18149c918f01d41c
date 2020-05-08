@@ -1,0 +1,49 @@
+package step01_기초;
+
+public class HelloJava {
+
+	public static void main(String[] args) {
+		System.out.println("hello java");
+		System.out.print("hello python\n");
+		System.out.println("hello oracle");
+		
+	}
+	
+}
+
+
+// 단일행 주석 : comment
+/*
+	다중행 주석
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

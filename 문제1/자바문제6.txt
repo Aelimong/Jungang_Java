@@ -1,0 +1,86 @@
+[문제25] 추상클래스를 이용하여 다음 프로그램을 완성하시오
+
+(1)추상클래스:  Height 
+   필드명 : INCH:double                      ==> final변수, 초기값:2.54 
+   메소드 : getInch(double cm):double  ==> 추상메서드
+            
+
+(2)처리조건
+   Test42클래스에서 Height를 상속받아 getInch()를 재정의 
+
+(3)입.출력
+입력(cm) : 5.08
+결과 : 2인치
+-----------------------------------------------------------------------------
+[문제26]오버라이드(override)를 이용하여 다음 프로그램을 작성하시오
+
+(1)클래스명: BaseTest
+   필드명 : name:String           ==> 초기값 : 민들래
+          salary:int          ==> 초기값 : 12000000
+   메소드 : getDisplay():void   ==> 이름과 연봉출력
+
+(2)클래스명: DerivedTest
+   필드명 : department:String   ==> 초기값 : "홍보부";
+   메소드 : getDisplay():void   ==> 부서출력
+
+(3)처리조건
+    BaseTest  bt = new DerivedTest();  
+    (BaseTest(선조)클래스로 DerivedTest(후손) 객체생성할것)
+
+(4)출력
+이름 : 민들래
+연봉 : 12000000 
+부서 : 홍보부
+-----------------------------------------------------------------------------
+[문제27]오버라이드(override)를 이용하여 다음 프로그램을 작성하시오
+(1)클래스명: Circle
+   필드명  : #r:int        
+           #size:double     
+           #PI:double       ==>초기값 3.141592, final
+
+   메서드  : +Circle(r:int)   ==> 반지름 대입
+           +compute():void       
+           +output():void 
+
+(2)클래스명 :  CircleArea     ==> Circle클래스를 상속하시오
+   메서드   :  +CircleArea(r:int)
+             +compute():void      ==> 원의 넓이=반지름 *반지름*3.141592
+             +output():void         ==> 출력      
+       
+(3)클래스명 :  CircleRound    ==> Circle클래스를 상속하시오
+   메서드    :  +CircleRound(r:int)
+              +compute():void      ==>원의둘레=반지름 * 2 * 3.141592
+              +output():void       ==>출력
+
+(4)처리방법
+   CircleArea, CircleRound클래스로 메모리할당 받고
+   compute(),output()메서드를  Overriding(재정의)하여 각각 값을 구하시오.
+
+(5)main()에 추가
+   CircleArea   ob1 = new CircleArea(10);
+   CircleRound  ob2 = new CircleRound(10);
+   ob1.compute();
+   ob1.output();
+   ob2.compute();
+   ob2.output();
+
+[출력결과]
+원의넓이 : 314.1592
+원의둘레 : 62.83184
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

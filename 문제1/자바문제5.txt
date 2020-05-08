@@ -1,0 +1,93 @@
+[문제22] 다음 프로그램을 완성하시오
+(1) package명은 test22로 하고 Salary.java, SalarySub.java, MainEx.java파일을 만드시오
+(2) 파일명 : Salary      
+-name:String
+-salary:int
++Salary()
++Salary(name:String, salary:int)
++toString():String         ==>  이름, 연봉출력
+    
+(3) 파일명 : SalarySub   ==> Salary상속
+-dept:String
++SalarySub()
++SalarySub(dept:String)
++SalarySub(name:String, salary:int, dept:String)   ==> name, salary는 부모생성자로 넘김
++toString():String         ==>  부서출력
+
+(4) 파일명 : MainEx  --main()포함 O
+SalarySub ob = new SalarySub("야철대장",85000000,"철기방");
+System.out.println(ob.toString());
+
+(5) 출력화면
+이름 : 야철대장
+연봉 : 85000000
+부서 : 철기방
+----------------------------------------------------------------------------------
+[문제23] 다음 프로그램을 완성하시오
+(1) package명은 test23로 하고 Entry.java, SubEntry.java, MainEx.java 파일을 만드시오
+(2)클래스명 : Entry
+-word:String
++Entry()                            ==> **  약어사전 **    출력
++Entry(word:String)
++toString()String               ==> 약어 : OOP   출력
+
+클래스명 : SubEntry  ==> Entry상속
+-definition:String
+-year:int
++SubEntry()
++SubEntry(definition:String, year:int)
++SubEntry(word:String, definition:String, year:int)
++toString():String           ==> 원어, 시기 출력
+
+
+클래스명 : MainEx  
+SubEntry ob=new SubEntry("OOP","Object Oriented Programming", 1991);	
+System.out.println(ob.toString());
+
+(3) 출력화면
+
+*****약어사전******
+약어 : OOP
+원어 : Object Oriented Programming
+시기 : 1991년
+-----------------------------------------------------------------------------------
+[문제24]원의 반지름을 받아 넓이를 계산하고 출력하시오
+(1)package명은 test24로 하고 Circle.java, CircleRound.java , 
+CircleSize.java, MainEx.java 만드시오
+
+(2)클래스명 : Circle
+-r:int
++Circle()
++Circle(r:int)
++setter & getter
++getCalc():double 
++toString():String    ==>  반지름 : 10  /   반지름 : 5 출력
+
+
+(3)클래스명 : CircleRound
++CircleRound()
++CircleRound(r:int)
++getCalc():double   ==> 원의 둘레를 구한다(반지름*2*3.14)
++toString():String    ==> 원의 둘레는 62.8입니다   출력
+
+(4)클래스명 : CircleSize
++CircleSize()
++CircleSize(r:int)
++getCalc():double   ==> 원의 넓이를 구한다(반지름*반지름*3.14)
++toString():String    ==> 원의 넓이는 78.5입니다 출력
+
+(5) 클래스명 : MainEx
+CircleRound ob1=new CircleRound(10);
+System.out.println(ob1.toString());
+
+CircleSize ob2=new CircleSize(5);
+System.out.println(ob2.toString());
+
+(6)출력화면
+반지름 : 10
+원의 둘레는 62.8입니다
+
+반지름 : 5
+원의 넓이는 78.5입니다
+
+

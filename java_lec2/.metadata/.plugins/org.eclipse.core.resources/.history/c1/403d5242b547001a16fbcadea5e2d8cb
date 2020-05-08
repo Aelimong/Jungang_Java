@@ -1,0 +1,53 @@
+package step02_연산자;
+
+public class OperatorEx {
+
+	public static void main(String[] args) {
+		
+		int score=57;
+		boolean sw=(score>= 70 && score<90);
+		
+		System.out.println(sw);
+		
+		
+		
+//---------------------------------
+		
+//		System.out.println(5/3);  //1   몫
+//		System.out.println(5%3);  //2  나머지
+//		
+//		int a=5;
+//		
+//		System.out.println(a==5); //a가 5인가?  true
+//		
+//		System.out.println(a>=5);  //a가 5보다 크거나 같은가
+//		System.out.println(a!=5);  //a가 5가 아닌가? 네 true 아니오 false
+//		
+//		String str="korea";
+//		System.out.println(str=="korea" || str=="KOREA");
+//		
+//		int score=57;
+//		System.out.println(score>=70 && score<90);
+//		
+		
+		
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

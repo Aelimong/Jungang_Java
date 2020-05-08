@@ -1,0 +1,46 @@
+package step02_연산자;
+
+public class CastingEx {
+
+	public static void main(String[] args) {
+		
+		int k=87, e=88, m=75;
+		int tot=k+e+m;
+		
+		System.out.println("총점 : "+tot);
+		
+		
+		
+		/*
+		byte a=100;
+		int b=a; 		//자동 형변환 
+		
+		double c=73.45;
+		int d=(int)c;	// 강제 형변환 
+		
+		System.out.println(a + "  "+ b);
+		System.out.println(c + "  "+ d);
+		*/
+		
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

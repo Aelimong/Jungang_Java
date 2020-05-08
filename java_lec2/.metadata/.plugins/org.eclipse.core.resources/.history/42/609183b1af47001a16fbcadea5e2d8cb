@@ -1,0 +1,49 @@
+package step02_연산자;
+
+public class CastingEx {
+
+	public static void main(String[] args) {
+		
+		int k=87, e=88, m=75;
+		int tot=k+e+m;
+//		double avg=tot/3;   //  (실수/정수)=>정수
+//		double avg=(double)tot/3;   
+		double avg=tot/3.0;
+		
+		System.out.println("총점 : "+tot);
+		System.out.println("평균 : "+avg);
+		
+		
+		/*
+		byte a=100;
+		int b=a; 		//자동 형변환 
+		
+		double c=73.45;
+		int d=(int)c;	// 강제 형변환 
+		
+		System.out.println(a + "  "+ b);
+		System.out.println(c + "  "+ d);
+		*/
+		
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
